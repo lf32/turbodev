@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "turbodev",
+  "version": "1.0.0",
+  "description": "Protects developers from insecure dependency packages.",
+  "permissions": ["activeTab", "storage", "https://registry.npmjs.org/*", "https://api.osv.dev/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.npmjs.com/package/*"],
+      "js": ["src/content.js"],
+      "css": ["src/styles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_popup": "src/popup.html"
+  }
+}
