@@ -1,5 +1,7 @@
 # TurboDev Chrome Extension
 
+<img width="373" alt="ss" src="https://github.com/user-attachments/assets/daf19786-2c4e-4163-9681-1b90b608750a" />
+
 TurboDev is a Chrome extension that enhances your npm package browsing experience by displaying vulnerability information directly on npmjs.com. It helps developers make informed decisions about package security.
 
 ## Features
@@ -60,12 +62,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Credits
 
 Data provided by [OSV.dev](https://osv.dev/)
-
-## Important Note
-
-Before publishing this extension, you need to create and add your own icon files in the `assets` directory:
-- icon16.png (16x16)
-- icon48.png (48x48)
-- icon128.png (128x128)
-
-You can create these icons using any image editing software, or use a service like [Favicon.io](https://favicon.io/) to generate them.
