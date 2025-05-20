@@ -1,0 +1,202 @@
+/* TurboDev content script styles */
+
+/* Container */
+.turbodev-container {
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.turbodev-container h3 {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #4f46e5;
+}
+
+.turbodev-content {
+  margin-top: 12px;
+}
+
+/* Loading state */
+.turbodev-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.turbodev-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #4f46e5;
+  animation: turbodev-spin 0.8s linear infinite;
+  margin-bottom: 12px;
+}
+
+@keyframes turbodev-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Score */
+.turbodev-score-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.turbodev-score-label {
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.turbodev-score {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: white;
+}
+
+.turbodev-score-best {
+  background-color: #10b981;
+}
+
+.turbodev-score-good {
+  background-color: #22c55e;
+}
+
+.turbodev-score-moderate {
+  background-color: #f59e0b;
+}
+
+.turbodev-score-bad {
+  background-color: #ef4444;
+}
+
+/* Vulnerability summary */
+.turbodev-summary {
+  margin-bottom: 16px;
+}
+
+.turbodev-severity-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+.turbodev-severity-list li {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+.turbodev-critical {
+  background-color: #ef4444;
+}
+
+.turbodev-high {
+  background-color: #f97316;
+}
+
+.turbodev-medium {
+  background-color: #f59e0b;
+}
+
+.turbodev-low {
+  background-color: #22c55e;
+}
+
+.turbodev-unknown {
+  background-color: #9ca3af;
+}
+
+/* Vulnerability details */
+.turbodev-vuln-details {
+  list-style: none;
+  padding: 0;
+}
+
+.turbodev-vuln-details li {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background-color: white;
+}
+
+.turbodev-vuln-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.turbodev-vuln-title a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.turbodev-vuln-title a:hover {
+  text-decoration: underline;
+}
+
+.turbodev-severity {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: white;
+  margin-right: 8px;
+}
+
+.turbodev-vuln-summary {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.turbodev-more-vulns {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Version badges */
+.turbodev-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+}
+
+.turbodev-badge-best {
+  background-color: #10b981;
+}
+
+.turbodev-badge-good {
+  background-color: #22c55e;
+}
+
+.turbodev-badge-moderate {
+  background-color: #f59e0b;
+}
+
+.turbodev-badge-bad {
+  background-color: #ef4444;
+}

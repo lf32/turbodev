@@ -1,0 +1,3 @@
+/* This would be a binary file and can't be included directly.
+   Instead, we'll create the assets directory structure and explain that
+   the extension developer needs to add their own icons. */

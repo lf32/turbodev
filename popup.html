@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TurboDev</title>
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 3C7.03 3 3 7.03 3 12H0L4 16L8 12H5C5 8.13 8.13 5 12 5C15.87 5 19 8.13 19 12C19 15.87 15.87 19 12 19C10.07 19 8.32 18.21 7.06 16.94L5.64 18.36C7.27 19.99 9.51 21 12 21C16.97 21 21 16.97 21 12C21 7.03 16.97 3 12 3Z" fill="currentColor"/>
+        </svg>
+        <h1>TurboDev</h1>
+      </div>
+      <div class="actions">
+        <button id="refresh-data" class="action-button" title="Refresh vulnerability data">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3C7.03 3 3 7.03 3 12H0L4 16L8 12H5C5 8.13 8.13 5 12 5C15.87 5 19 8.13 19 12C19 15.87 15.87 19 12 19C10.07 19 8.32 18.21 7.06 16.94L5.64 18.36C7.27 19.99 9.51 21 12 21C16.97 21 21 16.97 21 12C21 7.03 16.97 3 12 3Z" fill="currentColor"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div id="current-package" class="section">
+        <h2>Current Package</h2>
+        <div id="package-info">
+          <p>Not viewing an npm package</p>
+        </div>
+      </div>
+      
+      <div id="vulnerability-summary" class="section">
+        <h2>Vulnerability Summary</h2>
+        <div id="vulnerability-data">
+          <div class="placeholder">Browse an npm package to see vulnerability data</div>
+        </div>
+      </div>
+      
+      <div id="recent-packages" class="section">
+        <div class="section-header">
+          <h2>Recent Packages</h2>
+          <button id="clear-recent" class="text-button" title="Clear recent packages">
+            Clear All
+          </button>
+        </div>
+        <ul id="recent-list">
+          <!-- Recent packages will be populated here -->
+        </ul>
+      </div>
+    </main>
+    
+    <footer>
+      <p>Data provided by OSV.dev</p>
+    </footer>
+  </div>
+  <script src="popup.js" type="module"></script>
+</body>
+</html>

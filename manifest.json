@@ -1,20 +1,37 @@
 {
   "manifest_version": 3,
-  "name": "turbodev",
+  "name": "TurboDev",
   "version": "1.0.0",
-  "description": "Protects developers from insecure dependency packages.",
-  "permissions": ["activeTab", "storage", "https://registry.npmjs.org/*", "https://api.osv.dev/*"],
-  "content_scripts": [
-    {
-      "matches": ["*://*.npmjs.com/package/*"],
-      "js": ["src/content.js"],
-      "css": ["src/styles.css"]
-    }
-  ],
-  "background": {
-    "service_worker": "src/background.js"
+  "description": "Displays vulnerability information for npm packages from OSV.dev",
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
   },
   "action": {
-    "default_popup": "src/popup.html"
-  }
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.npmjs.com/package/*"],
+      "js": ["content.js"],
+      "css": ["styles/content.css"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://api.osv.dev/*"
+  ]
 }
