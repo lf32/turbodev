@@ -1,6 +1,6 @@
 # TurboDev Chrome Extension
 
-<img width="373" alt="ss" src="https://github.com/user-attachments/assets/daf19786-2c4e-4163-9681-1b90b608750a" />
+<img width="1188" alt="Screenshot 2025-05-20 at 10 13 44 AM" src="https://github.com/user-attachments/assets/0fa3aed9-cd45-4855-a88d-03d7adc3ab1d" />
 
 TurboDev is a Chrome extension that enhances your npm package browsing experience by displaying vulnerability information directly on npmjs.com. It helps developers make informed decisions about package security.
 
